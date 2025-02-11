@@ -1,11 +1,9 @@
-package pruebaInve.pruebaInve.Aplication.services;
+package pruebaInve.pruebaInve.aplication.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import pruebaInve.pruebaInve.domain.model.Product;
 import pruebaInve.pruebaInve.domain.model.Sale;
 import pruebaInve.pruebaInve.domain.repository.RepositoryProduct;
 import pruebaInve.pruebaInve.domain.repository.RepositorySale;

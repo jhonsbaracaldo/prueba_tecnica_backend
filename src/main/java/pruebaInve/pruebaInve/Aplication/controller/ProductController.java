@@ -1,10 +1,10 @@
-package pruebaInve.pruebaInve.Aplication.controller;
+package pruebaInve.pruebaInve.aplication.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pruebaInve.pruebaInve.domain.model.Product;
-import pruebaInve.pruebaInve.Aplication.services.ProductService;
+import pruebaInve.pruebaInve.aplication.services.ProductService;
 
 
 import java.util.List;
