@@ -28,7 +28,7 @@ public class SellerController {
     }
 
     @PostMapping ("/newSeller")
-    public ResponseEntity<Seller> createSeller(@RequestBody Seller seller) { // @RequestBody para el JSON del cuerpo
+    public ResponseEntity<Seller> createSeller(@RequestBody Seller seller) { 
         return sellerService.save(seller);
     }
 
