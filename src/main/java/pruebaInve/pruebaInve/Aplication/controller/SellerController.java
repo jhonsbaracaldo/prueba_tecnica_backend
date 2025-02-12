@@ -22,12 +22,12 @@ public class SellerController {
     }
 
     @GetMapping("/{id}")
-    public List<Seller> getSellerById(@PathVariable Long id) { // @PathVariable para extraer el ID
+    public List<Seller> getSellerById(@PathVariable Long id) { 
         return sellerService.sellerId(id);
     }
 
     @PostMapping ("/newSeller")
-    public ResponseEntity<Seller> createSeller(@RequestBody Seller seller) { // @RequestBody para el JSON del cuerpo
+    public ResponseEntity<Seller> createSeller(@RequestBody Seller seller) { 
         return sellerService.save(seller);
     }
 
@@ -37,7 +37,7 @@ public class SellerController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Seller> deleteSeller(@PathVariable Long id) { // @PathVariable
+    public ResponseEntity<Seller> deleteSeller(@PathVariable Long id) { 
         return sellerService.delete(id);
     }
 
