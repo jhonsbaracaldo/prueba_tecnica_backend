@@ -7,6 +7,8 @@ import pruebaInve.pruebaInve.aplication.services.SellerService;
 import pruebaInve.pruebaInve.domain.model.Seller;
 
 import java.util.List;
+import java.util.Optional;
+
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping ("v1/seller")
 @RestController
@@ -21,7 +23,7 @@ public class SellerController {
     }
 
     @GetMapping("/{id}")
-    public List<Seller> getSellerById(@PathVariable Long id) { // @PathVariable para extraer el ID
+    public Optional<Seller> getSellerById(@PathVariable Long id) {
         return sellerService.sellerId(id);
     }
 

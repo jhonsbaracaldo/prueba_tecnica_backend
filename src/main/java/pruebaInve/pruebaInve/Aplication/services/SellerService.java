@@ -19,7 +19,7 @@ public class SellerService {
         return this.repositorySeller.findAll();
     }
 
-     public List<Seller> sellerId (Long id){
+     public Optional<Seller> sellerId (Long id){
          repositorySeller.findById(id);
          return sellerId(id);
      }
